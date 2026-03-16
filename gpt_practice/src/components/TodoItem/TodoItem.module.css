@@ -1,0 +1,115 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #ececec;
+  transition: all 0.2s ease;
+}
+
+.item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+}
+
+.desc {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  max-width: 270px;
+}
+
+.btnWrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.deleteBtn,
+.editBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 8px;
+  background: #f5f5f5;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.editBtn:hover {
+  background: #e8f4ff;
+}
+
+.deleteBtn:hover {
+  background: #ffeaea;
+}
+
+.deleteBtn svg,
+.editBtn svg {
+  width: 18px;
+  height: 18px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #ececec;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  color: #444;
+  gap: 4px;
+}
+
+input {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+input:focus {
+  border-color: #4a90e2;
+}
+
+form button {
+  align-self: flex-start;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  background: #4a90e2;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+form button:hover {
+  background: #357abd;
+}

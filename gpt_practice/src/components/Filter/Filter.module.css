@@ -1,0 +1,30 @@
+.btnList {
+   display: flex;
+   gap: 20px;
+   align-items: center;
+   justify-content: center;
+}
+
+.btnList li {
+   list-style: none;
+}
+
+.button {
+  width: 200px;
+  background-color: #e0e0e0;
+  color: #000;
+  padding: 7px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.active {
+   width: 200px;
+  background-color: #000;
+  color: #fff;
+  padding: 7px;
+  border: none;
+  border-radius: 7px;
+    cursor: pointer;
+}

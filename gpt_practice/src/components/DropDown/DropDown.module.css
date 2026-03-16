@@ -1,0 +1,59 @@
+.sortWrapper {
+  position: relative;
+  display: inline-block;
+  font-family: sans-serif;
+}
+
+.sortTrigger {
+    margin-right: auto;
+  background-color: #fff;
+  border: none;
+  padding: 12px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  min-width: 175px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.active {
+  border-bottom: 1px dotted orange;
+  color: orange;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.sortArrow {
+  margin-left: 8px;
+  font-size: 0.8em;
+}
+
+.sortList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 4px 0;
+  margin: 4px 0 0 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: none;
+  z-index: 10;
+}
+
+.sortWrapper.open .sortList {
+  display: block;
+}
+
+.sortItem {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.sortItem:hover {
+  background-color: #f0f0f0;
+}
